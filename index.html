@@ -3,472 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K2 Střechy</title>
-<meta name="description" content="Profesionální klempířské, pokrývačské a izolatérské práce.">
+<title>Klempířské, pokrývačské a izolatérské práce Ostrava | K2 Střechy</title>
+<meta name="description" content="K2 Střechy Ostrava – odborné klempířské, pokrývačské a izolatérské práce v Ostravě a okolí. Specializujeme se na nové střechy, rekonstrukce, hydroizolace, oplechování a servis střech všech typů.">
 <meta name="theme-color" content="#0066ff">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    line-height:1.6;
-}
-
-/* ================= HLAVIČKA ================= */
-.main-header{
-    background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);
-    padding:15px 50px;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-    border-bottom:3px solid #06f;
-}
-
-.nav-container{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.left-side{
-    display:flex;
-    align-items:center;
-    gap:50px;
-}
-
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;line-height:1.6;}
+.main-header{background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);padding:15px 50px;position:sticky;top:0;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.2);border-bottom:3px solid #06f;}
+.nav-container{display:flex;align-items:center;justify-content:space-between;}
+.left-side{display:flex;align-items:center;gap:50px;}
 .logo img{height:80px;}
-
-.contact-vertical{
-    display:flex;
-    flex-direction:column;
-    font-weight:600;
-}
-.contact-vertical a{
-    color:#fff;
-    text-decoration:none;
-    margin:2px 0;
-}
-.contact-vertical a:hover{color:#ddd;}
-
-.nav-center{
-    display:flex;
-    gap:40px;
-}
-.nav-center a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    position:relative;
-}
-.nav-center a::after{
-    content:"";
-    position:absolute;
-    width:0%;
-    height:2px;
-    background:#fff;
-    left:0;
-    bottom:-5px;
-    transition:0.3s;
-}
+.contact-vertical{display:flex;flex-direction:column;font-weight:600;}
+.contact-vertical a{color:#fff;text-decoration:none;margin:2px 0;}
+.contact-vertical a:hover{color:#06f;}
+.nav-center{display:flex;gap:40px;}
+.nav-center a{color:white;text-decoration:none;font-weight:600;font-family:'Poppins',inherit;position:relative;}
+.nav-center a::after{content:"";position:absolute;width:0%;height:2px;background:#fff;left:0;bottom:-5px;transition:0.3s;}
 .nav-center a:hover::after{width:100%;}
-
-.nav-social{
-    display:flex;
-    gap:25px;
-}
-.nav-social a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:35px;
-    height:35px;
-    background:#000;
-    border-radius:50%;
-    color:white;
-    font-size:18px;
-    transition:0.3s;
-}
-.nav-social a:hover{
-    background:#06f;
-    color:white;
-}
-
-/* ================= HERO ================= */
-.hero{
-    height:60vh;
-    background:url('https://brx522.saas.contentserv.com/admin/app/opensearch/fileproxy/image?ID=0ed0b7db4d72f0466d6c28b79ac68b9ef24b52ad24211be816c6a38d2c4cd148:81774@brx522&rand=23b1b7069785fa6f044c9d89d078fec3&lang=32&force=1&shareOpenKey=4a729de2') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    position:relative;
-    color:white;
-}
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.6);
-}
-.hero-content{
-    position:relative;
-    z-index:2;
-    max-width:900px;
-}
-.hero h1{
-    font-size:36px;
-    line-height:1.4;
-}
-.hero p{
-    font-size:20px;
-    margin:20px 0;
-}
-.hero p strong{
-    font-weight:900; /* silnější pro SEO */
-}
-.hero-button{
-    padding:18px 55px;
-    background:#06f;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:20px;
-    border-radius:50px;
-    transition:0.3s;
-}
-.hero-button:hover{
-    background:#004ccc;
-    transform:scale(1.05);
-}
-
-/* ================= SLUŽBY ================= */
-.services-section{
-    padding:80px 20px;
-    text-align:center;
-    background:#fff;
-}
-.services-section h2{
-    font-size:36px;
-    margin-bottom:50px;
-}
-.services-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    max-width:1200px;
-    margin:0 auto;
-}
-.service-card{
-    background:#f9f9f9;
-    border-radius:20px;
-    padding:30px 20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
+.nav-social{display:flex;gap:25px;}
+.nav-social a{display:flex;align-items:center;justify-content:center;width:35px;height:35px;background:#000;border-radius:50%;color:white;font-size:18px;transition:0.3s;}
+.nav-social a:hover{background:#06f;color:white;}
+.hero{height:60vh;background:url('https://brx522.saas.contentserv.com/admin/app/opensearch/fileproxy/image?ID=0ed0b7db4d72f0466d6c28b79ac68b9ef24b52ad24211be816c6a38d2c4cd148:81774@brx522&rand=23b1b7069785fa6f044c9d89d078fec3&lang=32&force=1&shareOpenKey=4a729de2') center -50px/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;color:white;}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.6);}
+.hero-content{position:relative;z-index:2;max-width:900px;}
+.hero h1{font-size:36px;line-height:1.4;color:#cce0ff;font-family:'Poppins',inherit;}
+.hero p{font-size:20px;margin:20px 0;}
+.hero p strong{font-weight:900;}
+.hero-button{padding:18px 55px;background:#06f;color:white;text-decoration:none;font-weight:bold;font-size:20px;border-radius:50px;transition:0.3s;}
+.hero-button:hover{background:#004ccc;transform:scale(1.05);}
+.services-section{padding:80px 20px;text-align:center;background:#fff;}
+.services-section h2{font-size:36px;margin-bottom:50px;font-family:'Poppins',inherit;}
+.services-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1200px;margin:0 auto;}
+.service-card{background:#f9f9f9;border-radius:20px;padding:30px 20px;box-shadow:0 15px 35px rgba(0,0,0,0.1);transition:0.3s;}
 .service-card:hover{transform:translateY(-10px);}
-.service-card i{
-    font-size:40px;
-    color:#06f;
-    margin-bottom:20px;
-}
-
-/* ================= O NÁS ================= */
-.about-section{
-    padding:80px 20px;
-    background:#e8e8e8;
-}
-.about-wrapper{
-    max-width:1200px;
-    margin:0 auto;
-    display:flex;
-    flex-wrap:wrap;
-    gap:40px;
-    align-items:center;
-}
-.about-image{
-    flex:0 0 350px;
-}
-.about-image img{
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.2);
-}
-.about-content{
-    flex:1;
-}
-.about-content h2{
-    font-size:36px;
-}
-
-/* ================= MODRÁ LIŠTA POD O NÁS ================= */
-.about-divider{
-    height:4px;
-    background:#06f;
-    width:100%;
-    margin:0 auto;
-}
-
-/* ================= MATERIÁLY ================= */
-.materials-section{
-    width:100%;
-    padding:80px 0;
-    background:#f0f4ff;
-}
-.materials-section h2{
-    text-align:center;
-    font-size:34px;
-    margin-bottom:50px;
-}
-.materials-slider{
-    display:flex;
-    gap:40px;
-    width:max-content;
-    animation:slide 60s linear infinite;
-}
-
-@keyframes slide{
-    0%{transform:translateX(0);}
-    100%{transform:translateX(-50%);}
-}
-.material-tile{
-    min-width:280px;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition:0.4s;
-}
-.material-tile:hover{
-    transform:scale(1.1);
-    box-shadow:0 15px 35px rgba(0,0,0,0.2);
-}
-.material-tile img{
-    max-height:90px;
-}
-
-/* ================= KONTAKT ================= */
-.contact-section{
-    padding:80px 20px;
-    background:#fff;
-    text-align:center;
-}
-.contact-form{
-    max-width:500px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-.contact-form input,
-.contact-form textarea{
-    padding:15px;
-    border-radius:10px;
-    border:1px solid #ccc;
-}
-.contact-form button{
-    padding:15px;
-    border:none;
-    background:#06f;
-    color:#fff;
-    font-size:18px;
-    border-radius:50px;
-}
-
-/* ================= FAQ ================= */
-.faq-section{
-    padding:80px 20px;
-    background:#f4f4f4;
-}
-.faq-item{
-    max-width:900px;
-    margin:15px auto;
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
-    cursor:pointer;
-}
+.service-card i{font-size:40px;color:#06f;margin-bottom:20px;}
+.about-section{padding:80px 20px;background:#e8e8e8;}
+.about-wrapper{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
+.about-image{flex:0 0 350px;}
+.about-image img{width:100%;border-radius:15px;box-shadow:0 15px 35px rgba(0,0,0,0.2);}
+.about-content{flex:1;}
+.about-content h2{font-size:36px;font-family:'Poppins',inherit;}
+.about-divider{height:4px;background:#06f;width:100%;margin:0 auto;}
+.materials-section{width:100%;padding:80px 0;background:#f0f4ff;}
+.materials-section h2{text-align:center;font-size:34px;margin-bottom:50px;font-family:'Poppins',inherit;}
+.materials-slider{display:flex;gap:40px;width:max-content;animation:slide 60s linear infinite;}
+@keyframes slide{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.material-tile{min-width:280px;background:white;padding:40px;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.4s;}
+.material-tile:hover{transform:scale(1.1);box-shadow:0 15px 35px rgba(0,0,0,0.2);}
+.material-tile img{max-height:90px;}
+.contact-section{padding:80px 20px;background:#fff;text-align:center;}
+.contact-form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:15px;}
+.contact-form input,.contact-form textarea{padding:15px;border-radius:10px;border:1px solid #ccc;}
+.contact-form button{padding:15px;border:none;background:#06f;color:#fff;font-size:18px;border-radius:50px;}
+.faq-section{padding:80px 20px;background:#f4f4f4;}
+.faq-item{max-width:900px;margin:15px auto;background:white;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.1);cursor:pointer;}
 .faq-item p{display:none;}
-
-/* ================= FOOTER ================= */
-footer{
-    background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);
-    color:white;
-    text-align:center;
-    padding:70px 20px;
-}
-footer img{height:70px;}
-
-/* ================= RESPONSIVE ================= */
-@media(max-width:900px){
-    .nav-center{display:none;}
-    .about-wrapper{flex-direction:column;}
-    .hero h1{font-size:28px;}
-    .materials-slider{flex-direction:column; gap:20px;}
-}
+footer{background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);color:white;text-align:center;padding:30px 20px;}
+footer img{height:40px;}
+footer a{color:white;text-decoration:none;}
+footer a:hover{color:#06f;}
+@media(max-width:900px){.nav-center{display:none;}.about-wrapper{flex-direction:column;}.hero h1{font-size:28px;}.materials-slider{flex-direction:column;gap:20px;}}
 </style>
 </head>
 <body>
 
 <header class="main-header">
 <div class="nav-container">
-
 <div class="left-side">
-  <div class="logo">
-    <img src="https://i.imgur.com/nARlklA.png">
-  </div>
-  <div class="contact-vertical">
-    <a href="mailto:K2strechy@seznam.cz">K2strechy@seznam.cz</a>
-    <a href="tel:+420704247780">+420 704 247 780</a>
-  </div>
+<div class="logo"><a href="/"><img src="https://i.imgur.com/nARlklA.png" alt="K2 Střechy logo"></a></div>
+<div class="contact-vertical">
+<a href="mailto:K2strechy@seznam.cz">K2strechy@seznam.cz</a>
+<a href="tel:+420704247780">+420 704 247 780</a>
 </div>
-
+</div>
 <nav class="nav-center">
-  <a href="#">Klempířské práce</a>
-  <a href="#">Pokrývačské práce</a>
-  <a href="#">Izolatérské práce</a>
-  <a href="#">Servis a údržba</a>
-  <a href="#">O nás</a>
+<a href="#">Klempířské práce</a>
+<a href="#">Pokrývačské práce</a>
+<a href="#">Izolatérské práce</a>
+<a href="#">Servis a údržba</a>
+<a href="#">O nás</a>
 </nav>
-
 <div class="nav-social">
-  <a href="#"><i class="fab fa-facebook-f"></i></a>
-  <a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
 </div>
-
 </div>
 </header>
 
 <section class="hero">
 <div class="hero-content">
 <h1>Kvalitní střechy <strong>Ostrava a okolí</strong> bez kompromisů</h1>
-<p>Pokrývačské, klempířské a izolatérské práce po celé ČR</p>
-<a href="#contact" class="hero-button">Nezávazná objednávka</a>
+<p>Specializujeme se na komplexní realizace střech všech typů, včetně šikmých, plochých a kombinovaných. Naše služby zahrnují pokrývačské práce, klempířské oplechování, hydroizolace a odborný servis střech. Garantujeme precizní provedení a dlouhodobou spokojenost klientů v Ostravě a okolí.</p>
+<a href="#contact" class="hero-button">Získejte nezávaznou nabídku</a>
 </div>
 </section>
 
 <section class="services-section">
-<h2>Naše služby</h2>
+<h2>Naše služby v Ostravě a okolí</h2>
 <div class="services-container">
-
-<div class="service-card">
-<i class="fas fa-tools"></i>
-<h3>Klempířské práce</h3>
-<p>Montáž okapů, oplechování a kovových prvků.</p>
-</div>
-
-<div class="service-card">
-<i class="fas fa-hammer"></i>
-<h3>Pokrývačské práce</h3>
-<p>Nové střechy, rekonstrukce i opravy krytin.</p>
-</div>
-
-<div class="service-card">
-<i class="fas fa-water"></i>
-<h3>Izolatérské práce</h3>
-<p>Profesionální izolace proti vodě a vlhkosti.</p>
-</div>
-
-<div class="service-card">
-<i class="fas fa-wrench"></i>
-<h3>Servis a údržba</h3>
-<p>Kontroly a rychlé opravy střech.</p>
-</div>
-
+<div class="service-card"><i class="fas fa-tools"></i><h3>Klempířské práce</h3><p>Odborné klempířské práce zahrnují oplechování střech, okapové systémy, svody a žlaby. Používáme vysoce odolné materiály a precizní technologie, aby vaše střecha byla odolná vůči povětrnostním vlivům a dlouhodobě funkční.</p></div>
+<div class="service-card"><i class="fas fa-house"></i><h3>Pokrývačské práce</h3><p>Realizujeme pokládku střešních krytin všech typů – taškové, plechové, asfaltové a střešní folie. Rekonstruujeme staré střechy, zajišťujeme výměnu poškozených částí a komplexní přestavby. Naše práce je odolná, esteticky provedená a technicky precizní.</p></div>
+<div class="service-card"><i class="fas fa-water"></i><h3>Izolatérské práce</h3><p>Specializujeme se na hydroizolace plochých střech, teras, garáží a podpůrných konstrukcí. Používáme moderní izolační materiály, aby vaše střecha byla dokonale chráněná před vlhkostí, kondenzací a nežádoucími průsaky vody.</p></div>
+<div class="service-card"><i class="fas fa-cogs"></i><h3>Servis a údržba</h3><p>Provádíme pravidelnou kontrolu střech, čištění okapů, odstraňování poškozených částí a preventivní opravy. Naším cílem je prodloužit životnost střechy a zajistit její bezpečný a estetický stav po mnoho let.</p></div>
 </div>
 </section>
 
-<!-- ================= O NÁS PŘESUNUTO ZDE ================= -->
 <section class="about-section">
 <div class="about-wrapper">
-
-<div class="about-image">
-<img src="https://i.imgur.com/b8t34Az.jpeg">
-</div>
-
+<div class="about-image"><img src="https://i.imgur.com/b8t34Az.jpeg" alt="Odborníci na střechy Ostrava"></div>
 <div class="about-content">
-<h2>O nás</h2>
-<p>Jsme odborníci na střechy s dlouholetou praxí. Realizujeme nové střechy, rekonstrukce i kompletní opravy. Naším cílem je precizní práce a maximální spokojenost zákazníků.</p>
+<h2>O nás – odborníci na střechy v Ostravě a okolí</h2>
+<p>Jsme tým zkušených střechových odborníků s více než desetiletou praxí. Provádíme kompletní realizace nových střech, rekonstrukce historických objektů, drobné opravy a preventivní údržbu. Zaměřujeme se na použití kvalitních materiálů, odbornou montáž a dlouhodobou životnost střechy. Každý projekt je řešen individuálně s důrazem na technickou dokonalost a estetický vzhled.</p>
 </div>
-
 </div>
 </section>
-
-<div class="about-divider"></div> <!-- modrá lišta pod O nás -->
+<div class="about-divider"></div>
 
 <section class="materials-section">
-<h2>Pracujeme s kvalitními materiály</h2>
+<h2>Pracujeme s kvalitními střešními materiály v Ostravě a okolí</h2>
 <div class="materials-slider">
-
-<div class="material-tile">
-<img src="https://i.imgur.com/dg9bucH.jpeg" alt="Prefa">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/XAtnAD6.jpeg" alt="Partner">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/3BBsy4A.jpeg" alt="Velux">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/s4zwspj.png" alt="Bramac">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/9SHjmvr.png" alt="Tondach">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/qeikPOH.png" alt="KJG">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/IREF58C.jpeg" alt="Satjam">
-</div>
-
-
+<div class="material-tile"><img src="https://i.imgur.com/dg9bucH.jpeg" alt="Prefa střešní materiály Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/XAtnAD6.jpeg" alt="Partner střešní materiály Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/3BBsy4A.jpeg" alt="Velux střešní okna Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/s4zwspj.png" alt="Bramac střešní krytiny Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/9SHjmvr.png" alt="Tondach střešní tašky Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/qeikPOH.png" alt="KJG střešní krytiny Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/IREF58C.jpeg" alt="Satjam střešní krytiny Ostrava"></div>
 <!-- DUPLIKACE KVŮLI NEKONEČNÉ SMYČCE -->
-
-<div class="material-tile">
-<img src="https://i.imgur.com/dg9bucH.jpeg" alt="Prefa">
+<div class="material-tile"><img src="https://i.imgur.com/dg9bucH.jpeg" alt="Prefa střešní materiály Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/XAtnAD6.jpeg" alt="Partner střešní materiály Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/3BBsy4A.jpeg" alt="Velux střešní okna Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/s4zwspj.png" alt="Bramac střešní krytiny Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/9SHjmvr.png" alt="Tondach střešní tašky Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/qeikPOH.png" alt="KJG střešní krytiny Ostrava"></div>
+<div class="material-tile"><img src="https://i.imgur.com/IREF58C.jpeg" alt="Satjam střešní krytiny Ostrava"></div>
 </div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/XAtnAD6.jpeg" alt="Partner">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/3BBsy4A.jpeg" alt="Velux">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/s4zwspj.png" alt="Bramac">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/9SHjmvr.png" alt="Tondach">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/qeikPOH.png" alt="KJG">
-</div>
-
-<div class="material-tile">
-<img src="https://i.imgur.com/IREF58C.jpeg" alt="Satjam">
-</div>
-
-</div>
-
-
 </section>
 
 <section class="contact-section" id="contact">
@@ -483,42 +152,37 @@ footer img{height:70px;}
 </section>
 
 <section class="faq-section">
-<h2>Často kladené otázky</h2>
-
+<h2>Často kladené otázky – Ostrava a okolí</h2>
 <div class="faq-item">
-<h3>Jak dlouho trvá realizace?</h3>
-<p>Obvykle 1–3 týdny dle rozsahu projektu.</p>
+<h3>Jak dlouho trvá realizace střechy?</h3>
+<p>Typická doba realizace se pohybuje mezi 1–3 týdny dle složitosti střechy a rozsahu prací. U rozsáhlejších projektů, včetně rekonstrukcí historických objektů, může být realizace delší. Termíny vždy konzultujeme individuálně s klientem.</p>
 </div>
-
 <div class="faq-item">
 <h3>Poskytujete záruku?</h3>
-<p>Ano, na všechny realizace poskytujeme záruku.</p>
+<p>Ano, poskytujeme záruční dobu dle druhu materiálu a typu provedení. Standardně nabízíme záruku na práce i použité střešní krytiny, hydroizolace a klempířské oplechování.</p>
 </div>
-
 <div class="faq-item">
-<h3>Pracujete po celé ČR?</h3>
-<p>Ano, realizujeme zakázky po celé republice.</p>
+<h3>Pracujete po celé Ostravě a okolí?</h3>
+<p>Ano, naše služby pokrývají Ostravu a široké okolí, včetně Moravskoslezského kraje a přilehlých obcí. Realizujeme jak menší opravy, tak komplexní zakázky pro rodinné domy, komerční objekty a průmyslové haly.</p>
 </div>
-
 <div class="faq-item">
 <h3>Jak probíhá objednávka?</h3>
-<p>Kontaktujete nás, provedeme zaměření a připravíme nabídku.</p>
+<p>Po kontaktu provedeme odborné zaměření střechy, připravíme detailní kalkulaci a nabídku s doporučením nejvhodnějších materiálů a technologií. Následně domluvíme termín realizace. Celý proces probíhá rychle, transparentně a bez komplikací.</p>
 </div>
-
 </section>
 
 <footer>
-<img src="https://i.imgur.com/nARlklA.png">
-<p>K2strechy@seznam.cz | +420 704 247 780</p>
+<img src="https://i.imgur.com/nARlklA.png" alt="K2 Střechy logo">
+<p><a href="mailto:K2strechy@seznam.cz">K2strechy@seznam.cz</a> | <a href="tel:+420704247780">+420 704 247 780</a></p>
 <p>© 2026 K2 Střechy | Všechna práva vyhrazena</p>
 </footer>
 
 <script>
 document.querySelectorAll('.faq-item').forEach(item=>{
-  item.addEventListener('click',()=>{
-    const p=item.querySelector('p');
-    p.style.display=(p.style.display==='block')?'none':'block';
-  });
+item.addEventListener('click',()=>{
+const p=item.querySelector('p');
+p.style.display=(p.style.display==='block')?'none':'block';
+});
 });
 </script>
 

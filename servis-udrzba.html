@@ -3,57 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servis a údržba – K2 Střechy</title>
+<title>Servis a údržba střech | K2 Střechy</title>
+<meta name="description" content="K2 Střechy – profesionální servis a údržba střech v Ostravě a okolí. Kontroly, opravy, čištění okapů a prevence zatékání.">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;line-height:1.6;}
-.main-header{background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);padding:15px 40px;position:sticky;top:0;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.2);border-bottom:3px solid #06f;}
-.nav-container{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
-.logo img{height:70px;}
-.nav-center{display:flex;gap:35px;}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;line-height:1.6;}
+.main-header{background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);padding:20px 50px;position:sticky;top:0;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.2);border-bottom:3px solid #06f;}
+.nav-container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;width:100%;}
+.left-side{display:flex;align-items:center;gap:30px;}
+.logo img{height:80px;}
+.contact-vertical{display:flex;flex-direction:column;font-weight:600;}
+.contact-vertical a{color:#fff;text-decoration:none;margin:2px 0;}
+.contact-vertical a:hover{color:#06f;}
+.nav-center{display:flex;gap:40px;flex:1;justify-content:center;flex-wrap:wrap;}
 .nav-center a{color:white;text-decoration:none;font-weight:600;position:relative;}
 .nav-center a::after{content:"";position:absolute;width:0%;height:2px;background:#fff;left:0;bottom:-5px;transition:0.3s;}
 .nav-center a:hover::after{width:100%;}
-.nav-contact{display:flex;gap:20px;}
-.nav-contact a{color:white;text-decoration:none;font-weight:600;}
-.hero{height:450px;background:url('https://i.imgur.com/WmBbm3V.jpeg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;position:relative;text-align:center;color:white;}
-.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.55);}
-.hero-content{position:relative;z-index:2;}
-.hero h1{font-size:48px;margin-bottom:15px;}
-.hero p{font-size:20px;opacity:0.9;}
-.main-section{padding:80px 20px;max-width:1100px;margin:0 auto;}
-.section-title{text-align:center;font-size:36px;margin-bottom:40px;}
-.intro-text{font-size:18px;margin-bottom:50px;text-align:center;max-width:900px;margin-left:auto;margin-right:auto;color:#333;}
-.service-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;}
-.card{background:white;border-radius:15px;padding:35px 25px;box-shadow:0 15px 35px rgba(0,0,0,0.1);transition:0.3s;text-align:center;}
-.card:hover{transform:translateY(-8px);}
-.card i{font-size:40px;color:#06f;margin-bottom:15px;}
-.card h3{margin-bottom:10px;font-size:22px;}
-.card p{color:#555;}
-.detail-text{margin-top:70px;font-size:17px;color:#333;}
-.detail-text h3{margin-top:30px;color:#000;}
-.gallery{margin-top:70px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-.gallery img{width:250px;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.15);cursor:pointer;transition:0.3s;}
+.nav-social{display:flex;gap:25px;}
+.nav-social a{display:flex;align-items:center;justify-content:center;width:35px;height:35px;background:#000;border-radius:50%;color:white;font-size:18px;transition:0.3s;}
+.nav-social a:hover{background:#06f;color:white;}
+.hero{height:600px;background:url('https://i.imgur.com/WmBbm3V.jpeg') center/cover no-repeat;position:relative;}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.4);}
+.hero-content{position:relative;z-index:2;padding:40px 20px;max-width:1200px;margin:0 auto;color:white;text-align:center;}
+.hero-content h2{font-size:36px;margin-bottom:40px;}
+.services-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin:0 auto;max-width:1200px;}
+.service-card{background:#f9f9f9;border-radius:20px;padding:30px 20px;box-shadow:0 15px 35px rgba(0,0,0,0.1);transition:0.3s;text-align:center;color:#111;}
+.service-card:hover{transform:translateY(-10px);}
+.service-card i{font-size:50px;color:#06f;margin-bottom:20px;}
+.service-card h3{font-size:24px;margin-bottom:15px;}
+.service-card p{font-size:16px;text-align:justify;}
+.detail-text{padding:50px 20px;max-width:900px;margin:0 auto;}
+.detail-text h3{text-align:center;color:#111;margin-bottom:20px;}
+.detail-text p{margin-top:10px;color:#333;text-align:justify;font-size:16px;}
+.gallery-section{padding:50px 20px;max-width:1200px;margin:0 auto;text-align:center;}
+.gallery-section h3{margin-bottom:30px;color:#111;font-size:28px;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.15);cursor:pointer;transition:.3s;}
 .gallery img:hover{transform:scale(1.05);}
-.lightbox-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);display:none;justify-content:center;align-items:center;z-index:2000;}
-.lightbox-overlay .swiper{width:90%;max-width:1000px;height:80%;}
-.lightbox-overlay .swiper-slide img{width:100%;height:auto;border-radius:0;cursor:default;}
-footer{margin-top:100px;background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);color:white;text-align:center;padding:70px 20px;border-top:3px solid #06f;}
-footer img{height:75px;margin-bottom:20px;}
-footer p{margin:8px 0;font-size:15px;}
-footer a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
-footer a:hover{color:#ddd;}
-@media(max-width:1000px){.nav-center{display:none;}}
+.faq-section{padding:80px 20px;background:#f4f4f4;text-align:center;}
+.faq-item{max-width:900px;margin:15px auto;background:white;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.1);cursor:pointer;}
+.faq-item h3{margin:0;}
+.faq-item p{display:none;margin-top:10px;}
+footer{background:linear-gradient(90deg,#000 0%,#111 50%,#06f 100%);color:white;text-align:center;padding:30px 20px;}
+footer img{height:40px;margin-bottom:10px;}
+footer a{color:white;text-decoration:none;}
+footer a:hover{color:#06f;}
+footer .nav-social{display:flex;justify-content:center;gap:25px;margin-top:15px;}
+footer .nav-social a{display:flex;align-items:center;justify-content:center;width:35px;height:35px;background:#000;border-radius:50%;color:white;font-size:18px;transition:.3s;}
+footer .nav-social a:hover{background:#06f;color:white;}
+#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;align-items:center;justify-content:center;z-index:999;flex-direction:column;}
+#lightbox img{max-width:90%;max-height:80%;border-radius:12px;margin-bottom:20px;}
+#lightbox .close,#lightbox .prev,#lightbox .next{color:white;font-size:40px;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);}
+#lightbox .close{top:20px;right:30px;}
+#lightbox .prev{left:30px;}
+#lightbox .next{right:30px;}
+@media(max-width:900px){.hero-content h2{font-size:28px;}.services-container{grid-template-columns:1fr;}.nav-container{flex-direction:column;align-items:flex-start;gap:15px;}.nav-center{flex-wrap:wrap;gap:15px;justify-content:center;width:100%;}.nav-social{align-self:flex-end;}.contact-vertical{flex-direction:row;gap:15px;}.gallery img{height:200px;}}
+@media(max-width:500px){.main-header{padding:15px 20px;}.logo img{height:60px;}.hero-content h2{font-size:22px;}.gallery img{height:180px;}}
 </style>
 </head>
 <body>
 
 <header class="main-header">
 <div class="nav-container">
-<div class="logo"><a href="index.html"><img src="https://i.imgur.com/nARlklA.png" alt="logo"></a></div>
+<div class="left-side">
+<div class="logo"><a href="/"><img src="https://i.imgur.com/nARlklA.png" alt="K2 Střechy logo"></a></div>
+<div class="contact-vertical">
+<a href="mailto:K2strechy@seznam.cz">K2strechy@seznam.cz</a>
+<a href="tel:+420704247780">+420 704 247 780</a>
+</div>
+</div>
 <nav class="nav-center">
 <a href="klempirske-prace.html">Klempířské práce</a>
 <a href="pokryvacske-prace.html">Pokrývačské práce</a>
@@ -61,73 +82,98 @@ footer a:hover{color:#ddd;}
 <a href="servis-udrzba.html">Servis a údržba</a>
 <a href="onas.html">O nás</a>
 </nav>
-<div class="nav-contact">
-<a href="tel:+420704247780"><i class="fas fa-phone"></i> +420 704 247 780</a>
-<a href="mailto:K2strechy@seznam.cz"><i class="fas fa-envelope"></i></a>
+<div class="nav-social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
 </div>
 </div>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Servis a údržba</h1>
-<p>Kompletní péče o vaši střechu – kontrola, opravy a pravidelná údržba</p>
+<h2>Servis a údržba střech</h2>
+<div class="services-container">
+<div class="service-card">
+<i class="fas fa-tools"></i>
+<h3>Pravidelné kontroly</h3>
+<p>Kontrola střechy, krytiny, okapů a oplechování, odhalení poškození.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-hammer"></i>
+<h3>Opravy a výměny</h3>
+<p>Rychlá oprava poškozených částí střechy, výměna plechů a tašek.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-tint"></i>
+<h3>Údržba a čištění</h3>
+<p>Čištění okapů, odstranění mechů a nečistot, prevence zatékání.</p>
+</div>
+</div>
 </div>
 </section>
 
-<section class="main-section">
-<h2 class="section-title">Profesionální servis a údržba střech</h2>
-<p class="intro-text">
-Naši technici zajišťují pravidelné kontroly střechy, odhalení poškození a okamžité opravy. Díky tomu prodlužujeme životnost střechy a předcházíme nákladným opravám.
-</p>
-
-<div class="service-cards">
-<div class="card"><i class="fas fa-tools"></i><h3>Pravidelné kontroly</h3><p>Prohlídky střechy, kontrola krytiny, okapů a oplechování.</p></div>
-<div class="card"><i class="fas fa-hammer"></i><h3>Opravy poškození</h3><p>Rychlé řešení poškozených částí střechy, výměna plechů, oprava tašek.</p></div>
-<div class="card"><i class="fas fa-tint"></i><h3>Údržba a čištění</h3><p>Čištění okapů, odstraňování mechů a nečistot, prevence zatékání.</p></div>
-</div>
-
-<div class="detail-text">
-<h3>Proč je servis důležitý?</h3>
-<p>Bez pravidelného servisu se drobné problémy mohou změnit v rozsáhlé poškození střechy. Naše práce zajišťuje, že střecha zůstává suchá, bezpečná a dlouho vydrží.</p>
-</div>
-
-<div class="gallery">
-<img src="https://i.imgur.com/4YkwLh1.jpeg" data-index="0">
-<img src="https://i.imgur.com/HjGGqDJ.jpeg" data-index="1">
-<img src="https://i.imgur.com/EG0mFVZ.jpeg" data-index="2">
-<img src="https://i.imgur.com/Sm1bBuu.jpeg" data-index="3">
-</div>
-
+<section class="detail-text">
+<h3>Proč je servis střech důležitý?</h3>
+<p>Pravidelný servis a údržba prodlužuje životnost střechy, zabraňuje zatékání a předchází nákladným opravám. Naši odborníci provádí komplexní kontrolu a rychlé řešení problémů.</p>
 </section>
 
-<div class="lightbox-overlay">
-<div class="swiper lightbox-swiper">
-<div class="swiper-wrapper">
-<div class="swiper-slide"><img src="https://i.imgur.com/4YkwLh1.jpeg"></div>
-<div class="swiper-slide"><img src="https://i.imgur.com/HjGGqDJ.jpeg"></div>
-<div class="swiper-slide"><img src="https://i.imgur.com/EG0mFVZ.jpeg"></div>
-<div class="swiper-slide"><img src="https://i.imgur.com/Sm1bBuu.jpeg"></div>
+
+<div id="lightbox">
+<span class="close">&times;</span>
+<span class="prev">&#10094;</span>
+<img src="" alt="">
+<span class="next">&#10095;</span>
 </div>
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-pagination"></div>
-</div>
-</div>
+
+<section class="faq-section">
+<h2>Často kladené otázky – servis a údržba</h2>
+<div class="faq-item"><h3>Jak často provádíte kontroly?</h3><p>Doporučujeme minimálně 1× ročně, ideálně na jaře a po zimě.</p></div>
+<div class="faq-item"><h3>Jak rychle opravíte poškození?</h3><p>Většinou do několika dní po zjištění problému.</p></div>
+<div class="faq-item"><h3>Pokrýváte celé Ostravsko?</h3><p>Ano, naše služby zahrnují Ostravu a okolí, včetně Moravskoslezského kraje.</p></div>
+<div class="faq-item"><h3>Poskytujete záruku?</h3><p>Ano, poskytujeme záruku na všechny práce provedené našimi odborníky.</p></div>
+</section>
 
 <footer>
-<img src="https://i.imgur.com/nARlklA.png" alt="logo">
-<p><a href="tel:+420704247780"><i class="fas fa-phone"></i> +420 704 247 780</a> | <a href="mailto:K2strechy@seznam.cz"><i class="fas fa-envelope"></i> K2strechy@seznam.cz</a></p>
+<img src="https://i.imgur.com/nARlklA.png" alt="K2 Střechy logo">
+<p><a href="mailto:K2strechy@seznam.cz">K2strechy@seznam.cz</a> | <a href="tel:+420704247780">+420 704 247 780</a></p>
 <p>© 2026 K2 Střechy | Všechna práva vyhrazena</p>
+<div class="nav-social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
-const lightbox=new Swiper(".lightbox-swiper",{loop:true,slidesPerView:1,spaceBetween:10,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:true},keyboard:{enabled:true,onlyInViewport:true}});
-const overlay=document.querySelector('.lightbox-overlay');
-const thumbnails=document.querySelectorAll('.gallery img');
-thumbnails.forEach((thumb,index)=>{thumb.addEventListener('click',()=>{overlay.style.display='flex';lightbox.slideToLoop(index,0);});});
-overlay.addEventListener('click',e=>{if(e.target===overlay){overlay.style.display='none';}});
+let imgs=document.querySelectorAll('.gallery img'),
+    lightbox=document.getElementById('lightbox'),
+    lbImg=lightbox.querySelector('img'),
+    current=0;
+
+imgs.forEach((img,i)=>{
+    img.addEventListener('click',()=>{
+        lbImg.src=img.src;
+        lightbox.style.display='flex';
+        current=i;
+    });
+});
+
+lightbox.querySelector('.close').addEventListener('click',()=>{lightbox.style.display='none';});
+lightbox.querySelector('.prev').addEventListener('click',()=>{
+    current=(current-1+imgs.length)%imgs.length;
+    lbImg.src=imgs[current].src;
+});
+lightbox.querySelector('.next').addEventListener('click',()=>{
+    current=(current+1)%imgs.length;
+    lbImg.src=imgs[current].src;
+});
+
+document.querySelectorAll('.faq-item').forEach(item=>{
+    item.addEventListener('click',()=>{
+        let p=item.querySelector('p');
+        p.style.display=(p.style.display==='block')?'none':'block';
+    });
+});
 </script>
+
 </body>
 </html>
